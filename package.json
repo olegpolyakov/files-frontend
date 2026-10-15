@@ -1,0 +1,30 @@
+{
+    "name": "@olegpolyakov/files-frontend",
+    "version": "0.1.0",
+    "description": "",
+    "author": "Oleg Poliakov <olegpoliakov@outlook.com>",
+    "type": "module",
+    "scripts": {
+        "compile": "tsc --noEmit",
+        "dev": "vite",
+        "build": "vite build",
+        "lint": "eslint ./src"
+    },
+    "dependencies": {
+        "@olegpolyakov/core": "^0.10.0",
+        "@olegpolyakov/files-core": "^0.1.0",
+        "@olegpolyakov/frontend": "^0.22.0",
+        "@olegpolyakov/ui": "^0.11.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+        "react-pdf": "^11.0.0",
+        "react-router-dom": "^7.13.0"
+    },
+    "devDependencies": {
+        "@types/react": "^19.2.2",
+        "@types/react-dom": "^19.2.2",
+        "typescript": "^5.9.3",
+        "vite-plugin-pwa": "^1.2.0",
+        "vitest": "^4.1.10"
+    }
+}

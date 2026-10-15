@@ -1,0 +1,17 @@
+.root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--ui-space-m);
+}
+
+.content {
+    padding: var(--ui-space-m);
+}

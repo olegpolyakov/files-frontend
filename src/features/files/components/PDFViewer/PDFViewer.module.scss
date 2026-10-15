@@ -1,0 +1,21 @@
+.root {
+
+}
+
+.canvas {
+    margin: auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label {
+    margin: 0 8px;
+
+    input {
+        width: 2em;
+    }
+}

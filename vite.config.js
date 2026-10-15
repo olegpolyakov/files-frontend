@@ -1,0 +1,31 @@
+import { defineConfig, mergeConfig } from 'vite';
+import { VitePWA } from 'vite-plugin-pwa';
+
+import sharedConfig from '@olegpolyakov/frontend/viteconfig';
+
+export default defineConfig(env => mergeConfig(
+    sharedConfig(env),
+    {
+        plugins: [
+            VitePWA({
+                registerType: 'autoUpdate',
+                manifest: {
+                    name: 'Files',
+                    short_name: 'Files',
+                    description: 'Manage your files.',
+                    theme_color: '#ffffff',
+                    background_color: '#ffffff',
+                    display: 'standalone',
+                    start_url: '/',
+                    scope: '/',
+                    icons: [{
+                        src: '/logo.svg',
+                        sizes: 'any',
+                        type: 'image/svg+xml',
+                        purpose: 'any'
+                    }]
+                }
+            })
+        ]
+    }
+));

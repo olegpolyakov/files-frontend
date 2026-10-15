@@ -1,0 +1,11 @@
+.root {
+    padding: var(--ui-s-m);
+
+    input {
+        display: none;
+    }
+}
+
+.dropZone {
+    border-style: dashed !important;
+}
