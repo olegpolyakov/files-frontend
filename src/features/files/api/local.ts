@@ -36,8 +36,8 @@ export default (): FilesApi => ({
 
         this.events.dispatchEvent(new MessageEvent('message', {
             data: JSON.stringify({
-                model: 'File',
-                action: 'insert',
+                model: 'file',
+                action: 'create',
                 documentId: id,
                 data: fileData
             })
@@ -56,7 +56,7 @@ export default (): FilesApi => ({
 
         this.events.dispatchEvent(new MessageEvent('message', {
             data: JSON.stringify({
-                model: 'File',
+                model: 'file',
                 action: 'update',
                 documentId: id,
                 data: updatedFile
@@ -71,7 +71,7 @@ export default (): FilesApi => ({
 
         this.events.dispatchEvent(new MessageEvent('message', {
             data: JSON.stringify({
-                model: 'File',
+                model: 'file',
                 action: 'delete',
                 documentId: id,
                 data: null
