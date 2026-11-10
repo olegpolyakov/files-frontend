@@ -38,7 +38,7 @@ export default function FileItem({
             }
             end={
                 <ConfirmButton
-                    icon="Delete"
+                    icon="delete"
                     color="danger"
                     variant="tinted"
                     loading={isDeleting}
