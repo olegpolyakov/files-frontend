@@ -1,6 +1,6 @@
 import { DragEvent, useCallback, useRef, useState } from 'react';
 
-import { Box, Button, Flex, Icon, Item, Spinner, State, Text } from '@olegpolyakov/ui';
+import { Box, Flex, Icon, Item, Spinner, State, Text } from '@olegpolyakov/ui';
 import { formatFileSize } from '@olegpolyakov/files-core/utils';
 
 import { getIcon } from '../../helpers';
@@ -25,7 +25,6 @@ export default function FileUpload({
     const [error, setError] = useState<string>();
 
     const handleButtonClick = useCallback(() => {
-        console.log('Button clicked');
         fileInputRef.current?.click();
     }, []);
 
